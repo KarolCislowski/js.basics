@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Js Assignment</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
 
-  </head>
+<head>
+  <title>Js Assignment</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
 
-  <body>
-    <section class="main-container">
-      
-        <h1>Task Manager</h1>
+</head>
 
-        <!-- input container -->
-        <div class="input-container">
-          <input type="text" placeholder="Type your to do.." class="todo-input">
-          <button type="button" class="todo-button">+</button>
-        </div>
-        <p class="error-message">should not be empty !</p>
-      
+<body>
+  <section class="main-container">
 
-      <form>
+    <h1>Task Manager</h1>
 
-        <!--li container -->
-        <div class="todo-container">
-          <ul class="todo-list">
-            <li></li>
-          </ul>
-        </div>
+    <!-- input container -->
+    <div class="input-container">
+      <input type="text" placeholder="Type your to do.." class="todo-input" id="todo-input">
+      <button type="button" class="todo-button" id="todo-button">+</button>
+    </div>
+    <p class="error-message hidden" id="error-message">should not be empty !</p>
 
-        <!-- remove all button -->
-        <div class="remove-all-container">
-          <button class="remove-all">Remove All</button>
-        </div>
-      </form>
-      
 
-    </section>
+    <form>
 
-    <script src="src/index.js"></script>
-  </body>
+      <!--li container -->
+      <div class="todo-container">
+        <ul class="todo-list" id="todo-list">
+
+        </ul>
+      </div>
+
+      <!-- remove all button -->
+      <div class="remove-all-container">
+        <button class="remove-all" id="remove-all">Remove All</button>
+      </div>
+    </form>
+
+
+  </section>
+
+  <!-- Your js didn't work because you had a wrong path to the script -->
+  <script src="./index.js"></script>
+</body>
+
 </html>
